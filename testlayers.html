@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
   <!-- Load Shapefile -->
     <script src="https://unpkg.com/shpjs@latest/dist/shp.js"></script>
-	<script src="http://chapmanrebecca.com/AppliedClimate/HPOM/leaflet.shpfile.js"></script>	
+	<script src="HPOM/leaflet.shpfile.js"></script>
 	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Load D3 -->
@@ -26,12 +26,12 @@
   <!-- Load jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Load maprint -->
-    <script src="http://chapmanrebecca.com/AppliedClimate/HPOM/bundle.js"></script>
+    <script src="HPOM/bundle.js"></script>
 </head>
 
 <body> <!-- Our web map and content will go here -->
-<h1 align="center"><font face="Arial,Helvetica"><font color="#000000"><font size="+3">Hurricane Power Outage GeoViewer Test</font></font></font></h1>	
-     <div id="mapid" style="width: 1000px; height: 600px; margin-left:0px; margin-right:auto"></div> 
+<h1 align="center"><font face="Arial,Helvetica"><font color="#000000"><font size="+3">Hurricane Power Outage GeoViewer Test</font></font></font></h1>
+     <div id="mapid" style="width: 1000px; height: 600px; margin-left:0px; margin-right:auto"></div>
 </div>
 <script>
 	var mymap =  L.map('mapid', {
@@ -40,9 +40,9 @@
 });
   var gray = L.esri.basemapLayer("Gray");
   gray.addTo(mymap);
-  
+
   //https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/SPC_wx_outlks/MapServer
-  // var hist_hurr_county = 
+  // var hist_hurr_county =
 
 
 // this is tiled
@@ -57,7 +57,7 @@
  //Watches, Warnings, and Track/Intensity Forecasts
 	var best_track_fcst = L.esri.dynamicMapLayer({url:'https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/wwa_meteocean_tropicalcyclones_trackintensityfcsts_time/MapServer'});
  	best_track_fcst.addTo(mymap)
-  
+
 
 </script>
 </body>

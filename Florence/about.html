@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>HPOMG | About</title> 
+<title>HPOMG | About</title>
   <!-- External Stylesheets (we keep integrity to avoid security issues)-->
     <link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,7 +10,7 @@
 
 <center>
 <div class="title">
-  <h1 align="center"><font face="Helvetica"><font color="white"><font size="+3">Hurricane Power Outage Model GeoViewer</font></font></font></h1>	
+  <h1 align="center"><font face="Helvetica"><font color="white"><font size="+3">Hurricane Power Outage Model GeoViewer</font></font></font></h1>
 </div>
 <ul>
   <li><a href="index.html"><font face="Book Antiqua"><strong><i class="fa fa-home"></i> Home</a></li>
@@ -35,7 +35,7 @@ The Hurricane Power Outage Model GeoViewer (HPOMG) provides a user-friendly web-
 
  Please note that this model was trained with data primarily from hurricanes that did not stall out or move slowly, producing large amounts of rain (e.g., Harvey). Because of this, the model does not fully account for inland outages caused by riverine flooding due to prolonged, heavy rainfall. There is uncertainty on the level of inland outages, and the model may be underestimating outages in inland areas, particularly in and near flood-prone areas.<br/><br/>
  The outage estimates are provided for informational purposes only and are the product of a research project at the collaborating institutions. The information is provided "as is" without warranty of any kind. The investigators and their universities do not accept any responsibility or liability for the accuracy, content, completeness, legality, or reliability of the information contained on this website. This research was funded in part by the U.S. Department of Energy and a private utility.<br/><br/>
- For further information, you can contact <a href="https://geography.osu.edu/people/quiring.10">Steven Quiring</a> or <a href="https://ioe.engin.umich.edu/people/seth-guikema/">Seth Guikema</a>.  <br/>  
+ For further information, you can contact <a href="https://geography.osu.edu/people/quiring.10">Steven Quiring</a> or <a href="https://ioe.engin.umich.edu/people/seth-guikema/">Seth Guikema</a>.  <br/>
 </font></p>
 
 <p align="left" class="downloadM" onclick="downloadmanual()" style="cursor:pointer;"><font size="+1"; color="#bb0000"><strong>Download User Manual</strong></font></p>
@@ -50,18 +50,17 @@ The Hurricane Power Outage Model GeoViewer (HPOMG) provides a user-friendly web-
 
 </center>
 
-<script> 
+<script>
 // Download user manual
 function downloadmanual() {
-    var dataUrl = "http://hurricanepoweroutagemodel.science/Florence/HPOM/User_manual.pdf";
+    var dataUrl = "Florence/HPOM/User_manual.pdf";
     var downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href",dataUrl);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
-};	
+};
 </script>
 
 </body>
 
 </html>
-
